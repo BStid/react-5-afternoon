@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
 import { updateFound } from "../../ducks/reducer";
 import { connect } from "react-redux";
 
 class WizardFour extends Component {
   render() {
+    const { updateFound } = this.props;
+
     return (
       <div className="parent-div">
         <div className="vert-align">
